@@ -2,6 +2,22 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  async rewrites() {
+    return [
+      {
+        source: '/sppu',
+        destination: '/sppu/index.html',
+      },
+      {
+        source: '/dashboard',
+        destination: '/sppu/index.html',
+      },
+      {
+        source: '/scopus',
+        destination: '/sppu/index.html',
+      },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -8,3 +8,6 @@ __pycache__/
 *.pyc
 *.log
 .env*.local
+*scopuskey.text
+scopuskey.text
+
