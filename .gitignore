@@ -7,7 +7,10 @@ dist
 __pycache__/
 *.pyc
 *.log
-.env*.local
+.env
+.env*
+*.key
+*.secret
 *scopuskey.text
 scopuskey.text
 
