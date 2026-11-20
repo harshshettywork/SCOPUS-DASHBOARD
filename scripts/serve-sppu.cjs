@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORTS = process.env.PORT ? [parseInt(process.env.PORT, 10)] : [8000, 8080];
+const PORTS = process.env.PORT ? [parseInt(process.env.PORT, 10)] : [8000, 8080, 3000];
 const SPPU_DIR = path.join(__dirname, '..', 'SPPU ALL CODES');
 
 const MIME_TYPES = {
