@@ -3,7 +3,10 @@ const fs = require('fs');
 const path = require('path');
 
 const PORTS = process.env.PORT ? [parseInt(process.env.PORT, 10)] : [8000, 8080, 3000];
-const SPPU_DIR = path.join(__dirname, '..', 'SPPU ALL CODES');
+const ROOT_DIR = path.join(__dirname, '..');
+const SPPU_DIR = fs.existsSync(path.join(ROOT_DIR, 'index.html'))
+  ? ROOT_DIR
+  : path.join(ROOT_DIR, 'SPPU ALL CODES');
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=utf-8',

@@ -9,6 +9,7 @@
     "sppu": "node scripts/serve-sppu.cjs",
     "dev:sppu": "node scripts/serve-sppu.cjs",
     "dashboard": "node scripts/serve-sppu.cjs",
+    "serve": "node scripts/serve-sppu.cjs",
     "postinstall": "node scripts/patch-next.cjs",
     "lint": "next lint",
     "test": "node tests/test_runner.mjs",

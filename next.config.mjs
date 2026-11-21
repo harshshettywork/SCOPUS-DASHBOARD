@@ -5,6 +5,10 @@ const nextConfig = {
   async rewrites() {
     return [
       {
+        source: '/',
+        destination: '/sppu/index.html',
+      },
+      {
         source: '/sppu',
         destination: '/sppu/index.html',
       },
